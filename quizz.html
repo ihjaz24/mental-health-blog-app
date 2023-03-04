@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>quiz</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            background-image: url(/Users/thanv/Downloads/home.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>just feel free and answer the questions</h2>
+    <form>
+        <label>1.How have you been feeling lately?</label><br><br>
+        <input type="radio" name="a" id ="g" value="yes">yes<br><br>
+        <input type="radio" name="a"   id="gq" value="down or anxious">down or anxious<br><br>
+        <label>2.Have you experienced any changes in your mood or behavior recently?</label><br><br>
+        <input type="radio" name="b" id="we" value="yes" >yes<br><br>
+        <input type="radio" name="b" id="re"  value="no">no<br><br>
+        <label>3.Have you experienced any traumatic events in your life that are affecting your mental health?</label><br><br>
+        <input type="radio" name="c" id="ty" value="yes" >yes<br><br>
+        <input type="radio" name="c" id="uy"  value="no">no<br><br>
+        <label>4.Have you noticed any changes in your appetite?</label><br><br>
+        <input type="radio" name="d" id="zy" value="yes" >yes<br><br>
+        <input type="radio" name="d" id="xy"  value="no">no<br><br>
+        <label>5.Have you been engaging in any self-care practices such as exercise, meditation, or talking to friends or family members?</label><br><br>
+        <input type="radio" name="e" id="mm" value="yes" >yes<br><br>
+        <input type="radio" name="e" id="nn"  value="no">no<br><br>
+        <input type="submit"  onclick="quiz()"> 
+    </form>
+    <script>
+        function quiz(){
+            let A=document.querySelector('input[name="a"]:checked').value;
+            const arr=[]
+            if(A==="down or anxious"){
+               arr.push("If  you have been feeling down or anxious, I can offer you some support and encourage you to seek professional help if necessary. you should know that it's okay to feel this way, and that there are many resources available to help you");
+            }
+            let B=document.querySelector('input[name="b"]:checked').value;
+            if(B=="yes"){
+                arr.push("If  you are experiencing changes in your mood or behavior, I can advice you to describe the changes in more detail. If the changes are concerning, I am encourage you to seek professional help. If the changes are related to stress, I can suggest some self-care practices that might help you cope, such as exercise, meditation, or talking to a friend.");
+            }
+            let c=document.querySelector('input[name="c"]:checked').value;
+            
+            if(c==="yes"){
+                arr.push("If  you have experienced trauma, I am offering my support and encouraging you to seek professional help if necessary. I can also suggest some self-care practices that might help you cope, such as mindfulness meditation or talking to a therapist");
+            }
+            let d=document.querySelector('input[name="d"]:checked').value;
+            
+            if(d==="yes"){
+                arr.push("If  you have noticed changes in your appetite, I am encouraging you to maintain a healthy diet and suggest some healthy snack options that might help you manage your hunger and cravings");
+            }
+            let e=document.querySelector('input[name="e"]:checked').value;
+            
+            if(e==="yes"){
+                arr.push("If  you have been engaging in self-care practices, I congratulate you and encourage you to continue. If you have not been engaging in self-care practices, I can suggest some that might be helpful for you, such as taking a walk, listening to music.");
+            }
+            arr.forEach(sentence => {
+                document.writeln(sentence)
+            });
+        }
+    </script>
+
+</body>
+</html> 
