@@ -1,1 +1,7 @@
-This blogging app for mental health provides a safe and supportive space for individuals to share their thoughts, feelings, and experiences related to mental health. Users can create blog posts, share them with a community of like-minded individuals, and receive feedback and support from others. The app also provides resources and tools to help users manage their mental health, such as guided meditations, mindfulness exercises, and tips for coping with stress and anxiety. The focus of the app is on promoting mental wellness, reducing stigma, and building a community of support and understanding.
+we were trying to create a blog to help mental health issues with an additional feature of chatbot which gives medical support .we were also aiming to make a chatroom where people can share their traumas,stories of their struggles and success during the fight againt mental health issues. our main aim was to create a chatbot which will provide anonymity for the user.we also meant to give support for the person with mental issues.
+
+we stated our work from scratch. now we created a blog site named mind blog.it contains some news articles relating to mental health,quiz to analyse the mental state and provide advise,article searching.
+
+we used html,css,javascript and firebase to create this project.
+
+apart from chatbot and chatroom everything works perfectly fine. we tried making chatbot through variuos methods such as using api's,dialogflow,python with AI.but we were not able to obtain output. we tried to make our chatroom using html,css and firebase.we were able to create the both frontend and backend properly without any errors but we were not able to connect them.
