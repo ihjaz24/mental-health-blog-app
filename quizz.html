@@ -3,7 +3,7 @@
 <head>
     
     <title>quiz</title>
-    <style>
+   <style>
         body{
             background-color: antiquewhite;
             background-image: url(/Users/thanv/Downloads/home.jpg);
@@ -14,10 +14,15 @@
             text-align: center;
         }
     </style>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogpost.css">
+    <link rel="stylesheet" href="css/mobile.css">
     
 </head>
 <body>
-    <h2>just feel free and answer the questions</h2>
+    <h2>FEEL FREE TO ANSWER THE QUESTION</h2><br>
+    <div>
     <form>
         <label>1.How have you been feeling lately?</label><br><br>
         <input type="radio" name="a" id ="g" value="yes">yes<br><br>
@@ -36,6 +41,7 @@
         <input type="radio" name="e" id="nn"  value="no">no<br><br>
         <input type="submit"  onclick="quiz()"> 
     </form>
+    </div>
     <script>
         function quiz(){
             let A=document.querySelector('input[name="a"]:checked').value;
